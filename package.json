@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "build-start-with-env": "ENV_A='runtime' ENV_B=runtime pnpm build && pnpm start",
+    "dev-with-env": "ENV_A=runtime ENV_B=runtime pnpm dev"
   },
   "dependencies": {
     "react": "^18",
